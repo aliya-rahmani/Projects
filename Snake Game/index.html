@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snake Game</title>
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: #20D1FD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    border: 1px solid white;
+  }
+  .score {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32pt;
+    color: #9040F8;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav a:active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  #strong {
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a id="strong" href="#">SnakyJS</a>
+    <a href="#">About</a>
+    <a value = "Refresh" onclick="history.go(0)" value="New Game" > New Game </a>
+  </div>
+  <h1 class="score"></h1>
+  <canvas
+    class="canvas"
+    height="400"
+    width="500"
+    style="background-color: #9040F8">
+  </canvas>
+
+</body>
+<script type="text/javascript" src="fruit.js"></script>
+<script type="text/javascript" src="snake.js"></script>
+<script type="text/javascript" src="draw.js"></script>
+</html>

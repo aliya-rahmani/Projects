@@ -38,7 +38,7 @@ int main()
     cin>>n>>m;
 
 
-//Edge list
+/// Edge list
 vector<vector<int> > edges;      // (a,b,3) (c,d,5).......
  for(int i=0; i<m; i++){
      int u,v,wt;

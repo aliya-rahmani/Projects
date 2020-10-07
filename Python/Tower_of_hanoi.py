@@ -1,4 +1,4 @@
-## Recursive Python function to solve the tower of hanoi 
+# Recursive Python function to solve the tower of hanoi 
   
 def TowerOfHanoi(n , source, destination, auxiliary): 
     if n==1: 

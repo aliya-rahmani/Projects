@@ -41,7 +41,7 @@ def btnClick(buttons):
 
 
     elif buttons["text"] == " " and bclick == False:
-        buttons["text"] = "O"
+        buttons["text"] = "$"
         bclick = True
         checkForWin()
         flag += 1
@@ -64,15 +64,15 @@ def checkForWin():
     elif(flag == 8):
         tkinter.messagebox.showinfo("Tic-Tac-Toe", "It is a Tie")
 
-    elif (button1['text'] == 'O' and button2['text'] == 'O' and button3['text'] == 'O' or
-          button4['text'] == 'O' and button5['text'] == 'O' and button6['text'] == 'O' or
-          button7['text'] == 'O' and button8['text'] == 'O' and button9['text'] == 'O' or
-          button1['text'] == 'O' and button5['text'] == 'O' and button9['text'] == 'O' or
-          button3['text'] == 'O' and button5['text'] == 'O' and button7['text'] == 'O' or
-          button1['text'] == 'O' and button2['text'] == 'O' and button3['text'] == 'O' or
-          button1['text'] == 'O' and button4['text'] == 'O' and button7['text'] == 'O' or
-          button2['text'] == 'O' and button5['text'] == 'O' and button8['text'] == 'O' or
-          button7['text'] == 'O' and button6['text'] == 'O' and button9['text'] == 'O'):
+    elif (button1['text'] == '$' and button2['text'] == '$' and button3['text'] == '$' or
+          button4['text'] == '$' and button5['text'] == '$' and button6['text'] == '$' or
+          button7['text'] == '$' and button8['text'] == '$' and button9['text'] == '$' or
+          button1['text'] == '$' and button5['text'] == '$' and button9['text'] == '$' or
+          button3['text'] == '$' and button5['text'] == '$' and button7['text'] == '$' or
+          button1['text'] == '$' and button2['text'] == '$' and button3['text'] == '$' or
+          button1['text'] == '$' and button4['text'] == '$' and button7['text'] == '$' or
+          button2['text'] == '$' and button5['text'] == '$' and button8['text'] == '$' or
+          button7['text'] == '$' and button6['text'] == '$' and button9['text'] == '$'):
         disableButton()
         tkinter.messagebox.showinfo("Tic-Tac-Toe", playerb)
 

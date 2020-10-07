@@ -31,3 +31,4 @@ if tries==6:
     print("You are out of tries!", a, "is the no.")
 else:
     print("The no. of tries were:", tries )
+

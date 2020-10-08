@@ -1,6 +1,6 @@
 import time
 
-# ASCII Art of GIF Frames
+# ASCII_Art_of_GIF_Frames
 a="""
 `  `  `       --/         `.:..         `--.-           --:.         -.:-`         -:--`         `  
           `  `---.`  `` `  -..-` ` `` ` `.--.` ` `` `  .--.``` ````  .--.` ` ````  .--.` ```        

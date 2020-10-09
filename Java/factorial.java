@@ -11,11 +11,11 @@ public class factorial {
 	// fact method to calculate factorial, takes integer n as parameter and returns the factorial
 	public static int fact(int n)
 	{
-		int factorial = 1;
+		int fac = 1;
 
 		// loop to calculate factorial
 		for (int i = n; i > 0; i--)
-			factorial *= i;
+			fac = fac* i;
 
 		return factorial;
 	}
@@ -27,7 +27,7 @@ public class factorial {
 		Scanner sc = new Scanner(System.in);
 
 		// input number
-		System.out.println("Enter a number to find factorial: ");
+		System.out.println("Enter a number whose factorial is to be found: ");
 		num = sc.nextInt();
 
 		// calling fact method with num argument

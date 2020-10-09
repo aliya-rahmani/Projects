@@ -11,7 +11,7 @@ class Fun{
      }
      };
 
-     // make functional object for priority queue
+     /// make functional object for priority queue
      class Person{
      public:
          string name;

@@ -2,6 +2,7 @@ import random
 randNumber = random.randint(1, 100)
 userGuess = None
 guesses = 0
+# welcome to the game
 
 while(userGuess != randNumber):
     userGuess = int(input("Enter your guess: "))

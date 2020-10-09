@@ -1,0 +1,251 @@
+MovieName,Rating,Director
+1. The Shawshank Redemption (1994),9.3,Frank Darabont
+2. The Godfather (1972),9.2,Francis Ford Coppola
+3. The Dark Knight (2008),9,Christopher Nolan
+4. The Godfather: Part II (1974),9,Francis Ford Coppola
+5. The Lord of the Rings: The Return of the King (2003),8.9,Peter Jackson
+6. Pulp Fiction (1994),8.9,Quentin Tarantino
+7. Schindler's List (1993),8.9,Steven Spielberg
+8. 12 Angry Men (1957),8.9,Sidney Lumet
+9. Inception (2010),8.8,Christopher Nolan
+10. Fight Club (1999),8.8,David Fincher
+11. The Lord of the Rings: The Fellowship of the Ring (2001),8.8,Peter Jackson
+12. Forrest Gump (1994),8.8,Robert Zemeckis
+"13. The Good, the Bad and the Ugly (1966)",8.8,Sergio Leone
+14. The Lord of the Rings: The Two Towers (2002),8.7,Peter Jackson
+15. The Matrix (1999),8.7,
+16. Goodfellas (1990),8.7,Martin Scorsese
+17. Star Wars: Episode V - The Empire Strikes Back (1980),8.7,Irvin Kershner
+18. One Flew Over the Cuckoo's Nest (1975),8.7,Milos Forman
+19. Harakiri (1962),8.7,Masaki Kobayashi
+20. Parasite (2019),8.6,Bong Joon Ho
+21. Interstellar (2014),8.6,Christopher Nolan
+22. City of God (2002),8.6,
+23. Spirited Away (2001),8.6,Hayao Miyazaki
+24. Saving Private Ryan (1998),8.6,Steven Spielberg
+25. The Green Mile (1999),8.6,Frank Darabont
+26. Life Is Beautiful (1997),8.6,Roberto Benigni
+27. Se7en (1995),8.6,David Fincher
+28. The Silence of the Lambs (1991),8.6,Jonathan Demme
+29. Star Wars: Episode IV - A New Hope (1977),8.6,George Lucas
+30. Seven Samurai (1954),8.6,Akira Kurosawa
+31. It's a Wonderful Life (1946),8.6,Frank Capra
+32. Joker (2019),8.5,Todd Phillips
+33. Avengers: Infinity War (2018),8.5,
+34. Whiplash (2014),8.5,Damien Chazelle
+35. The Intouchables (2011),8.5,
+36. The Prestige (2006),8.5,Christopher Nolan
+37. The Departed (2006),8.5,Martin Scorsese
+38. The Pianist (2002),8.5,Roman Polanski
+39. Gladiator (2000),8.5,Ridley Scott
+40. American History X (1998),8.5,Tony Kaye
+41. The Usual Suspects (1995),8.5,Bryan Singer
+42. Léon: The Professional (1994),8.5,Luc Besson
+43. The Lion King (1994),8.5,
+44. Terminator 2: Judgment Day (1991),8.5,James Cameron
+45. Cinema Paradiso (1988),8.5,Giuseppe Tornatore
+46. Grave of the Fireflies (1988),8.5,Isao Takahata
+47. Back to the Future (1985),8.5,Robert Zemeckis
+48. Once Upon a Time in the West (1968),8.5,Sergio Leone
+49. High and Low (1963),8.5,Akira Kurosawa
+50. Psycho (1960),8.5,Alfred Hitchcock
+51. Casablanca (1942),8.5,Michael Curtiz
+52. Modern Times (1936),8.5,Charles Chaplin
+53. City Lights (1931),8.5,Charles Chaplin
+54. 1917 (2019),8.4,Sam Mendes
+55. Capernaum (2018),8.4,Nadine Labaki
+56. Your Name. (2016),8.4,Makoto Shinkai
+57. Dangal (2016),8.4,Nitesh Tiwari
+58. Spider-Man: Into the Spider-Verse (2018),8.4,
+59. Avengers: Endgame (2019),8.4,
+60. Coco (I) (2017),8.4,
+61. Django Unchained (2012),8.4,Quentin Tarantino
+62. The Dark Knight Rises (2012),8.4,Christopher Nolan
+63. 3 Idiots (2009),8.4,Rajkumar Hirani
+64. Taare Zameen Par (2007),8.4,
+65. WALL·E (2008),8.4,Andrew Stanton
+66. The Lives of Others (2006),8.4,Florian Henckel von Donnersmarck
+67. Oldboy (2003),8.4,Chan-wook Park
+68. Memento (2000),8.4,Christopher Nolan
+69. Princess Mononoke (1997),8.4,Hayao Miyazaki
+70. Once Upon a Time in America (1984),8.4,Sergio Leone
+71. Raiders of the Lost Ark (1981),8.4,Steven Spielberg
+72. The Shining (1980),8.4,Stanley Kubrick
+73. Apocalypse Now (1979),8.4,Francis Ford Coppola
+74. Alien (1979),8.4,Ridley Scott
+75. Dr. Strangelove (1964),8.4,Stanley Kubrick
+76. Witness for the Prosecution (1957),8.4,Billy Wilder
+77. Paths of Glory (1957),8.4,Stanley Kubrick
+78. Rear Window (1954),8.4,Alfred Hitchcock
+79. Sunset Blvd. (1950),8.4,Billy Wilder
+80. The Great Dictator (1940),8.4,Charles Chaplin
+81. Andhadhun (2018),8.3,Sriram Raghavan
+82. The Hunt (2012),8.3,Thomas Vinterberg
+83. A Separation (2011),8.3,Asghar Farhadi
+84. Incendies (2010),8.3,Denis Villeneuve
+85. My Father and My Son (2005),8.3,Çagan Irmak
+86. Toy Story 3 (2010),8.3,Lee Unkrich
+87. Inglourious Basterds (2009),8.3,Quentin Tarantino
+88. Eternal Sunshine of the Spotless Mind (2004),8.3,Michel Gondry
+89. Amélie (2001),8.3,Jean-Pierre Jeunet
+90. Snatch (2000),8.3,Guy Ritchie
+91. Requiem for a Dream (2000),8.3,Darren Aronofsky
+92. American Beauty (1999),8.3,Sam Mendes
+93. Good Will Hunting (1997),8.3,Gus Van Sant
+94. Children of Heaven (1997),8.3,Majid Majidi
+95. The Bandit (1996),8.3,Yavuz Turgul
+96. Toy Story (1995),8.3,John Lasseter
+97. Braveheart (1995),8.3,Mel Gibson
+98. Reservoir Dogs (1992),8.3,Quentin Tarantino
+99. Full Metal Jacket (1987),8.3,Stanley Kubrick
+100. Come and See (1985),8.3,Elem Klimov
+101. Aliens (1986),8.3,James Cameron
+102. Amadeus (1984),8.3,Milos Forman
+103. Scarface (1983),8.3,Brian De Palma
+104. Star Wars: Episode VI - Return of the Jedi (1983),8.3,Richard Marquand
+105. Das Boot (1981),8.3,Wolfgang Petersen
+106. Taxi Driver (1976),8.3,Martin Scorsese
+107. The Sting (1973),8.3,George Roy Hill
+108. A Clockwork Orange (1971),8.3,Stanley Kubrick
+109. 2001: A Space Odyssey (1968),8.3,Stanley Kubrick
+110. For a Few Dollars More (1965),8.3,Sergio Leone
+111. Lawrence of Arabia (1962),8.3,David Lean
+112. The Apartment (1960),8.3,Billy Wilder
+113. North by Northwest (1959),8.3,Alfred Hitchcock
+114. Vertigo (1958),8.3,Alfred Hitchcock
+115. Singin' in the Rain (1952),8.3,
+116. Ikiru (1952),8.3,Akira Kurosawa
+117. Bicycle Thieves (1948),8.3,Vittorio De Sica
+118. Double Indemnity (1944),8.3,Billy Wilder
+119. Citizen Kane (1941),8.3,Orson Welles
+120. M (1931),8.3,Fritz Lang
+121. Metropolis (1927),8.3,Fritz Lang
+122. The Kid (1921),8.3,Charles Chaplin
+123. Portrait of a Lady on Fire (2019),8.2,Céline Sciamma
+124. Green Book (2018),8.2,Peter Farrelly
+"125. Three Billboards Outside Ebbing, Missouri (2017)",8.2,Martin McDonagh
+126. Klaus (2019),8.2,
+127. Drishyam (2015),8.2,Nishikant Kamat
+128. Inside Out (I) (2015),8.2,
+129. Gangs of Wasseypur (2012),8.2,Anurag Kashyap
+130. The Secret in Their Eyes (2009),8.2,Juan José Campanella
+131. Warrior (2011),8.2,Gavin O'Connor
+132. Up (2009),8.2,
+133. The Wolf of Wall Street (2013),8.2,Martin Scorsese
+134. There Will Be Blood (2007),8.2,Paul Thomas Anderson
+135. Pan's Labyrinth (2006),8.2,Guillermo del Toro
+136. V for Vendetta (2005),8.2,James McTeigue
+137. Rang De Basanti (2006),8.2,Rakeysh Omprakash Mehra
+138. Batman Begins (2005),8.2,Christopher Nolan
+139. Downfall (2004),8.2,Oliver Hirschbiegel
+140. Howl's Moving Castle (2004),8.2,Hayao Miyazaki
+141. A Beautiful Mind (2001),8.2,Ron Howard
+"142. Lock, Stock and Two Smoking Barrels (1998)",8.2,Guy Ritchie
+143. L.A. Confidential (1997),8.2,Curtis Hanson
+144. Heat (1995),8.2,Michael Mann
+145. Casino (1995),8.2,Martin Scorsese
+146. Unforgiven (1992),8.2,Clint Eastwood
+147. Indiana Jones and the Last Crusade (1989),8.2,Steven Spielberg
+148. My Neighbor Totoro (1988),8.2,Hayao Miyazaki
+149. Die Hard (1988),8.2,John McTiernan
+150. Ran (1985),8.2,Akira Kurosawa
+151. Raging Bull (1980),8.2,Martin Scorsese
+152. Stalker (1979),8.2,Andrei Tarkovsky
+153. Monty Python and the Holy Grail (1975),8.2,
+154. Chinatown (1974),8.2,Roman Polanski
+155. Andrei Rublev (1966),8.2,Andrei Tarkovsky
+156. The Great Escape (1963),8.2,John Sturges
+157. To Kill a Mockingbird (1962),8.2,Robert Mulligan
+158. Yojimbo (1961),8.2,Akira Kurosawa
+159. Judgment at Nuremberg (1961),8.2,Stanley Kramer
+160. Some Like It Hot (1959),8.2,Billy Wilder
+161. Wild Strawberries (1957),8.2,Ingmar Bergman
+162. The Seventh Seal (1957),8.2,Ingmar Bergman
+163. Dial M for Murder (1954),8.2,Alfred Hitchcock
+164. Tokyo Story (1953),8.2,Yasujirô Ozu
+165. Rashomon (1950),8.2,Akira Kurosawa
+166. All About Eve (1950),8.2,Joseph L. Mankiewicz
+167. The Treasure of the Sierra Madre (1948),8.2,John Huston
+168. The Gold Rush (1925),8.2,Charles Chaplin
+169. Sherlock Jr. (1924),8.2,Buster Keaton
+170. The Invisible Guest (2016),8.1,Oriol Paulo
+171. The Handmaiden (2016),8.1,Chan-wook Park
+172. Logan (2017),8.1,James Mangold
+173. Room (I) (2015),8.1,Lenny Abrahamson
+174. Wild Tales (2014),8.1,Damián Szifron
+175. PK (2014),8.1,Rajkumar Hirani
+176. The Grand Budapest Hotel (2014),8.1,Wes Anderson
+177. Gone Girl (2014),8.1,David Fincher
+178. Hacksaw Ridge (2016),8.1,Mel Gibson
+179. 12 Years a Slave (2013),8.1,Steve McQueen
+180. Rush (I) (2013),8.1,Ron Howard
+181. Ford v Ferrari (2019),8.1,James Mangold
+182. Spotlight (I) (2015),8.1,Tom McCarthy
+183. The Help (2011),8.1,Tate Taylor
+184. Prisoners (2013),8.1,Denis Villeneuve
+185. Mad Max: Fury Road (2015),8.1,George Miller
+186. Gran Torino (2008),8.1,Clint Eastwood
+187. Harry Potter and the Deathly Hallows: Part 2 (2011),8.1,David Yates
+188. Shutter Island (2010),8.1,Martin Scorsese
+189. Hachi: A Dog's Tale (2009),8.1,Lasse Hallström
+190. Mary and Max (2009),8.1,Adam Elliot
+191. How to Train Your Dragon (2010),8.1,
+192. Into the Wild (2007),8.1,Sean Penn
+193. No Country for Old Men (2007),8.1,
+194. Million Dollar Baby (2004),8.1,Clint Eastwood
+195. Hotel Rwanda (2004),8.1,Terry George
+196. Memories of Murder (2003),8.1,Bong Joon Ho
+197. Kill Bill: Vol. 1 (2003),8.1,Quentin Tarantino
+198. Finding Nemo (2003),8.1,
+199. Catch Me If You Can (2002),8.1,Steven Spielberg
+200. Amores Perros (2000),8.1,Alejandro G. Iñárritu
+201. Lagaan: Once Upon a Time in India (2001),8.1,Ashutosh Gowariker
+202. The Sixth Sense (1999),8.1,M. Night Shyamalan
+203. The Truman Show (1998),8.1,Peter Weir
+204. The Big Lebowski (1998),8.1,
+205. In the Mood for Love (2000),8.1,Kar-Wai Wong
+206. Trainspotting (1996),8.1,Danny Boyle
+207. Fargo (1996),8.1,
+208. La Haine (1995),8.1,Mathieu Kassovitz
+209. Before Sunrise (1995),8.1,Richard Linklater
+210. Jurassic Park (1993),8.1,Steven Spielberg
+211. In the Name of the Father (1993),8.1,Jim Sheridan
+212. Dead Poets Society (1989),8.1,Peter Weir
+213. The Princess Bride (1987),8.1,Rob Reiner
+214. Stand by Me (1986),8.1,Rob Reiner
+215. Platoon (1986),8.1,Oliver Stone
+"216. Paris, Texas (1984)",8.1,Wim Wenders
+217. Nausicaä of the Valley of the Wind (1984),8.1,Hayao Miyazaki
+218. The Thing (1982),8.1,John Carpenter
+219. Blade Runner (1982),8.1,Ridley Scott
+220. The Elephant Man (1980),8.1,David Lynch
+221. Monty Python's Life of Brian (1979),8.1,Terry Jones
+222. The Deer Hunter (1978),8.1,Michael Cimino
+223. Rocky (1976),8.1,John G. Avildsen
+224. Network (1976),8.1,Sidney Lumet
+225. Barry Lyndon (1975),8.1,Stanley Kubrick
+226. Cool Hand Luke (1967),8.1,Stuart Rosenberg
+227. Persona (1966),8.1,Ingmar Bergman
+228. The Battle of Algiers (1966),8.1,Gillo Pontecorvo
+229. The 400 Blows (1959),8.1,François Truffaut
+230. Ben-Hur (1959),8.1,William Wyler
+231. Throne of Blood (1957),8.1,Akira Kurosawa
+232. The Bridge on the River Kwai (1957),8.1,David Lean
+233. On the Waterfront (1954),8.1,Elia Kazan
+234. The Wages of Fear (1953),8.1,Henri-Georges Clouzot
+235. Ace in the Hole (1951),8.1,Billy Wilder
+236. White Heat (1949),8.1,Raoul Walsh
+237. The Third Man (1949),8.1,Carol Reed
+238. The Red Shoes (1948),8.1,
+239. Rebecca (1940),8.1,Alfred Hitchcock
+240. Mr. Smith Goes to Washington (1939),8.1,Frank Capra
+241. Gone with the Wind (1939),8.1,
+242. It Happened One Night (1934),8.1,Frank Capra
+243. The Passion of Joan of Arc (1928),8.1,Carl Theodor Dreyer
+244. The General (1926),8.1,
+245. Before Sunset (2004),8,Richard Linklater
+"246. Monsters, Inc. (2001)",8,
+247. Aladdin (1992),8,
+248. Akira (1988),8,Katsuhiro Ôtomo
+249. The Terminator (1984),8,James Cameron
+250. Butch Cassidy and the Sundance Kid (1969),8,George Roy Hill

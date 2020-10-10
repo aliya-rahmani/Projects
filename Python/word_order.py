@@ -41,3 +41,4 @@ if __name__ == '__main__':
             l[s]=1
 print(len(l))
 for e in l.keys():
+    print(e)

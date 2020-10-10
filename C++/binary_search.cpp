@@ -1,53 +1,38 @@
 #include <iostream>
-
 using namespace std;
 
-int binary_search(int array[], int size, int value)
-{
-    int begin = 0;
-    int end = size - 1;
+int binarySearch(int arr[], int n, int x) {
+	int start = 0, end = n - 1;
+	while(start <= end) {
+		int mid = (start + end) / 2;
+		if(arr[mid] == x) {
+			return mid;
+		}
+		else if(x < arr[mid]) {
+			end = mid - 1;
+		}
+		else {
+			start = mid + 1;
+		}
+	}
 
-    int middle;
-
-    while (begin <= end)
-    {
-        middle = (begin + end) / 2;
-
-        if (value < array[middle])
-        {
-            end = middle - 1;
-        }
-        else if (value > array[middle])
-        {
-            begin = middle + 1;
-        }
-        else
-        {
-            return middle;
-        }
-    }
-
-    return -1;
+	return -1;
 }
 
-int main()
-{
-    int value;
+int main() {
+	// Take array input from the user
+	int n;
+	cin >> n;
 
-    int array[] = {1, 4, 54, 87, 94, 21, 36, 45, 87, 98};
-    int size = (sizeof(array) / sizeof(int));
+	int input[100];
+	
+	for(int i = 0; i < n; i++) {
+		cin >> input[i];
+	}
 
-    cout << "Number to search: " << endl;
-    cin >> value;
+	int x;
+	cin >> x;
 
-    int result = binary_search(array, size, value);
+	cout << binarySearch(input, n, x) << endl; 	
 
-    if (result >= 0)
-    {
-        cout << "The value " << array[result] << " was found";
-    }
-    else
-    {
-        cout << "The value " << value << " was not found";
-    }
 }

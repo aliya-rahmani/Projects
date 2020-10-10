@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default">
+  <div class="navbar-header">
+      <a class="navbar-brand" href="#">FLOG</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      {% if session.login %}
+      <li><a href="/write-blog">Write a new blog</a></li>
+      <li><a href="/my-blogs">View my blogs</a></li>
+      {% endif %}
+      <li><a href="/about">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      {% if session.login %}
+      <li>
+        <a href="/logout">Logout</a>
+      </li>
+      {% else %}
+      <li>
+        <a href="/login">Login</a>
+      </li>
+      <li>
+        <a href="/register">Register</a>
+      </li>
+      {% endif %}
+    </ul>
+</nav>

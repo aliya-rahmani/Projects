@@ -1,0 +1,190 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="GetTransactionData"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:sd="clr-namespace:System.Data;assembly=System.Data"
+ xmlns:ui="http://schemas.uipath.com/workflow/activities"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_TransactionNumber" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="out_TransactionItem" Type="OutArgument(x:String)" />
+    <x:Property Name="out_TransactionField1" Type="OutArgument(x:String)" />
+    <x:Property Name="out_TransactionField2" Type="OutArgument(x:String)" />
+    <x:Property Name="out_TransactionID" Type="OutArgument(x:String)" />
+    <x:Property Name="io_TransactionData" Type="InOutArgument(sd:DataTable)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>GetTransactionData_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>Microsoft.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>Microsoft.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Services.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="GetTransactionData" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="NextPageExists" />
+    </Sequence.Variables>
+    <WriteLine DisplayName="Debug: Write Line" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Page: &quot; + in_TransactionNumber.ToString]" />
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser Work Item" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d07d7f1c9945861e64e123d091272b61" Selector="&lt;html title='ACME System 1 - Work Items' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <ui:UiElementExists DisplayName="Element Exists Next Page" Exists="[NextPageExists]" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="112503e31e82de2ba093f55bbb03b3f9" Selector="[&quot;&lt;html title='ACME System 1 - Work Items' /&gt;&lt;webctrl aaname='&quot; + in_TransactionNumber.ToString + &quot;' tag='LI' /&gt;&quot;]" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+    <If Condition="[NextPageExists]" DisplayName="If more transaction data" sap2010:WorkflowViewState.IdRef="If_2">
+      <If.Then>
+        <Assign sap2010:WorkflowViewState.IdRef="Assign_5">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[out_TransactionItem]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[in_TransactionNumber.ToString]</InArgument>
+          </Assign.Value>
+        </Assign>
+      </If.Then>
+      <If.Else>
+        <Assign DisplayName="Assign Transaction Item Nothing" sap2010:WorkflowViewState.IdRef="Assign_6">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[out_TransactionItem]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[Nothing]</InArgument>
+          </Assign.Value>
+        </Assign>
+      </If.Else>
+    </If>
+    <If Condition="[out_TransactionItem isNot Nothing]" DisplayName="If a new Item is fetched Grab it's significant data for logging" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence sap2010:Annotation.AnnotationText="Write data to the added fields that identify the Transaction" DisplayName="Write Transaction info in Logging Fields" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Assign DisplayName="Assign TransactionID" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[out_TransactionID]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[in_TransactionNumber.ToString]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Assign TransactionField1" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[out_TransactionField1]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[string.Empty]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Assign TransactionField1" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[out_TransactionField2]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[string.Empty]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Then>
+    </If>
+    <sads:DebugSymbol.Symbol>d7IBRTpcVUlQQVRIIEFzc2lnbm1lbnQgMlxUZW1wIERpc3BhdGNoZXIgLSBXb3JraW5nXEdlbmVyYXRlWWVhcmx5UmVwb3J0Rm9yVmVuZG9yLURpc3BhdGNoZXItbWFzdGVyXEdlbmVyYXRlWWVhcmx5UmVwb3J0Rm9yVmVuZG9yLURpc3BhdGNoZXItbWFzdGVyXEZyYW1ld29ya1xHZXRUcmFuc2FjdGlvbkRhdGEueGFtbB5NA5cBDgIBAVEFUZwBAgEoUgVhFwIBH2IFdwoCARN4BZUBCgIBAlFjUZkBAgEpUpUCUsgCAgEnWAteFgIBIGITYiUCARRkCWsSAgEabgl1EgIBFngTeDgCAQN6CZMBFAIBBVkNXSICASFpNGlTAgEdZjVmSgIBG3M0cz0CARlwNXBKAgEXewuCARQCAQ6DAQuKARQCAQqLAQuSARQCAQZbiwFbnwICASVbqgJbsAICASRZT1lhAgEigAE2gAFVAgERfTd9SgIBD4gBNogBRAIBDYUBN4UBTgIBC5ABNpABRAIBCY0BN40BTgIBBw==</sads:DebugSymbol.Symbol>
+  </Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="509,61" />
+      <sap2010:ViewStateData Id="UiElementExists_1" sap:VirtualizedContainerService.HintSize="314,106" />
+      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="336,230">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="BrowserScope_1" sap:VirtualizedContainerService.HintSize="509,376" />
+      <sap2010:ViewStateData Id="Assign_5" sap:VirtualizedContainerService.HintSize="242,60" />
+      <sap2010:ViewStateData Id="Assign_6" sap:VirtualizedContainerService.HintSize="242,60" />
+      <sap2010:ViewStateData Id="If_2" sap:VirtualizedContainerService.HintSize="509,208" />
+      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="242,60" />
+      <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="242,60" />
+      <sap2010:ViewStateData Id="Assign_4" sap:VirtualizedContainerService.HintSize="242,60" />
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="264,426">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="If_1" sap:VirtualizedContainerService.HintSize="509,574" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="531,1490">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="GetTransactionData_1" sap:VirtualizedContainerService.HintSize="571,1570" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

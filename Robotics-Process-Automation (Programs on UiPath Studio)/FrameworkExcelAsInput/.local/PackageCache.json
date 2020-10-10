@@ -1,0 +1,496 @@
+{
+  "Packages": [
+    {
+      "Package": {
+        "Id": "UiPath.Excel.Activities",
+        "Version": "2.8.0-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.excel.activities/2.8.0-preview\\lib/net461/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.excel.activities/2.8.0-preview\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.excel.activities/2.8.0-preview\\lib/net461/UiPath.Excel.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Mail.Activities",
+        "Version": "1.8.0-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\bouncycastle/1.8.5\\lib/BouncyCastle.Crypto.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\interop.domino.dll/1.0.0\\lib/Interop.Domino.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.mail.activities/1.8.0-preview\\lib/net461/MailKit.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.mail.activities/1.8.0-preview\\lib/net461/MimeKit.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.mail.activities/1.8.0-preview\\lib/net461/UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.mail.activities/1.8.0-preview\\lib/net461/UiPath.Mail.Activities.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.mail.activities/1.8.0-preview\\lib/net461/UiPath.Mail.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.OmniPage.Activities",
+        "Version": "1.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.ocr.contracts/2.2.1\\lib/net45/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.activities/1.2.0\\lib/net452/UiPath.OmniPage.Activities.Design.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.activities/1.2.0\\lib/net452/UiPath.OmniPage.Activities.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.activities/1.2.0\\lib/net452/UiPath.Vision.OmniPage.Core.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.activities/1.2.0\\lib/net452/UiPath.Vision.OmniPage.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/AppHelper.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/AppProductConfig.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/AppUtils.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/atm2lll.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Bnt.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/CRX.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Defaults.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Firewrx.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/FireWrx2.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/FireWrx3.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/FireWrx4.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/FireWrx5.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/FireWrx6.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Formatter.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/ICDLLW32.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/ICHUNW32.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/IF_PNG.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/jp2k_kdu_apps_vnew.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/kdu_vnewR.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/KernelAPI.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/LecsoMgr.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/LEditor.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/MiddleEarth.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Mor.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Mor2.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Mor3.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Mor4.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Mor5.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Mor6.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/MorIF.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/msvcp140.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Nuance.OmniPage.CSDK.ArgTypes.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Nuance.OmniPage.CSDK.CAPI.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Nuance.OmniPage.CSDK.Objects.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/pccext.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/pccext2.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/pccext3.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/pccext4.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/pccext5.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/pccext6.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/PreRendering.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/RecAPIPlus.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/RecDiag.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/RecPDFNet.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Rendering.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/Rendering2.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/rndsdawg.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/rndsinso.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/SkinnedClasses.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/SkinnedWindows.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/SPDFLib.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/UiPath.OmniPage.Bundle.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/vcruntime140.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/xocr.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/xocr2.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/xocr3.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/xocr4.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/xocr5.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.omnipage.bundle/1.0.2\\lib/net452/xocr6.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Persistence.Activities",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.20\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.formactivitylibrary.contracts/1.0.0\\lib/net461/UiPath.Form.ActivityLibrary.Contracts.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.persistence.activities/1.0.1\\lib/net461/UiPath.Orchestrator.Service.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.persistence.activities/1.0.1\\lib/net461/UiPath.Persistence.Activities.Design.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.persistence.activities/1.0.1\\lib/net461/UiPath.Persistence.Activities.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.persistence.activities/1.0.1\\lib/net461/UiPath.Persistence.Orchestrator.Client.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.System.Activities",
+        "Version": "18.3.6897.22524"
+      },
+      "Assemblies": [
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.20\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.system.activities/18.3.6897.22524\\lib/net461/UiPath.System.Activities.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.UIAutomation.Activities",
+        "Version": "18.3.6897.22543"
+      },
+      "Assemblies": [
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\caliburn.micro/3.0.1\\lib/net45/Caliburn.Micro.Platform.Core.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\caliburn.micro/3.0.1\\lib/net45/Caliburn.Micro.Platform.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\caliburn.micro/3.0.1\\lib/net45/System.Windows.Interactivity.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\caliburn.micro.core/3.0.1\\lib/net45/Caliburn.Micro.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath/9.0.6893.27943\\lib/UiPath.Interop.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.uiautomation.activities/18.3.6897.22543\\lib/net461/UiPath.Wizards.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.vision/1.1.0\\lib/net452/UiPath.Vision.Core.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.vision/1.1.0\\lib/net452/UiPath.Vision.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.vision/1.1.0\\lib/net452/UiPath.Vision.Package.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.WebAPI.Activities",
+        "Version": "1.4.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\restsharp/106.3.1\\lib/net452/RestSharp.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.Activities.dll",
+        "C:\\Users\\RISHABH SRIVASTAVA\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.dll"
+      ]
+    }
+  ],
+  "Conflicts": [],
+  "ResolvedDependencies": {
+    "AvalonEdit": {
+      "Id": "AvalonEdit",
+      "Version": "5.0.3",
+      "Dependencies": []
+    },
+    "BouncyCastle": {
+      "Id": "BouncyCastle",
+      "Version": "1.8.5",
+      "Dependencies": []
+    },
+    "Caliburn.Micro": {
+      "Id": "Caliburn.Micro",
+      "Version": "3.0.1",
+      "Dependencies": [
+        {
+          "Item1": "Caliburn.Micro.Core",
+          "Item2": "[3.0.1, 3.0.1]"
+        }
+      ]
+    },
+    "Caliburn.Micro.Core": {
+      "Id": "Caliburn.Micro.Core",
+      "Version": "3.0.1",
+      "Dependencies": []
+    },
+    "ClosedXML": {
+      "Id": "ClosedXML",
+      "Version": "0.87.1",
+      "Dependencies": [
+        {
+          "Item1": "DocumentFormat.OpenXml",
+          "Item2": "[2.5.0, )"
+        }
+      ]
+    },
+    "CsvHelper": {
+      "Id": "CsvHelper",
+      "Version": "2.13.5",
+      "Dependencies": []
+    },
+    "DocumentFormat.OpenXml": {
+      "Id": "DocumentFormat.OpenXml",
+      "Version": "2.5.0",
+      "Dependencies": []
+    },
+    "Extended.Wpf.Toolkit": {
+      "Id": "Extended.Wpf.Toolkit",
+      "Version": "2.8.0",
+      "Dependencies": []
+    },
+    "Humanizer.Core": {
+      "Id": "Humanizer.Core",
+      "Version": "2.4.2",
+      "Dependencies": []
+    },
+    "interop.domino.dll": {
+      "Id": "interop.domino.dll",
+      "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "Microsoft.Exchange.WebServices": {
+      "Id": "Microsoft.Exchange.WebServices",
+      "Version": "2.2.0",
+      "Dependencies": []
+    },
+    "Microsoft.Rest.ClientRuntime": {
+      "Id": "Microsoft.Rest.ClientRuntime",
+      "Version": "2.3.20",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
+        }
+      ]
+    },
+    "Microsoft.VisualStudio.OLE.Interop": {
+      "Id": "Microsoft.VisualStudio.OLE.Interop",
+      "Version": "7.10.6071",
+      "Dependencies": []
+    },
+    "Newtonsoft.Json": {
+      "Id": "Newtonsoft.Json",
+      "Version": "11.0.2",
+      "Dependencies": []
+    },
+    "NPOI": {
+      "Id": "NPOI",
+      "Version": "2.4.1",
+      "Dependencies": [
+        {
+          "Item1": "SharpZipLib",
+          "Item2": "[1.0.0, )"
+        }
+      ]
+    },
+    "RestSharp": {
+      "Id": "RestSharp",
+      "Version": "106.3.1",
+      "Dependencies": []
+    },
+    "SharpZipLib": {
+      "Id": "SharpZipLib",
+      "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "System.ValueTuple": {
+      "Id": "System.ValueTuple",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
+    "UiPath": {
+      "Id": "UiPath",
+      "Version": "9.0.6893.27943",
+      "Dependencies": []
+    },
+    "UiPath.Excel.Activities": {
+      "Id": "UiPath.Excel.Activities",
+      "Version": "2.8.0-preview",
+      "Dependencies": [
+        {
+          "Item1": "ClosedXML",
+          "Item2": "[0.87.1, )"
+        },
+        {
+          "Item1": "CsvHelper",
+          "Item2": "[2.13.5, )"
+        },
+        {
+          "Item1": "DocumentFormat.OpenXml",
+          "Item2": "[2.5.0, )"
+        },
+        {
+          "Item1": "Microsoft.VisualStudio.OLE.Interop",
+          "Item2": "[7.10.6071, )"
+        },
+        {
+          "Item1": "NPOI",
+          "Item2": "[2.4.1, )"
+        },
+        {
+          "Item1": "SharpZipLib",
+          "Item2": "[1.0.0, )"
+        }
+      ]
+    },
+    "UiPath.FormActivityLibrary.Contracts": {
+      "Id": "UiPath.FormActivityLibrary.Contracts",
+      "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "UiPath.Mail.Activities": {
+      "Id": "UiPath.Mail.Activities",
+      "Version": "1.8.0-preview",
+      "Dependencies": [
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "Microsoft.Exchange.WebServices",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "BouncyCastle",
+          "Item2": "[1.8.5, )"
+        },
+        {
+          "Item1": "interop.domino.dll",
+          "Item2": "[1.0.0, )"
+        }
+      ]
+    },
+    "UiPath.OCR.Contracts": {
+      "Id": "UiPath.OCR.Contracts",
+      "Version": "2.2.1",
+      "Dependencies": []
+    },
+    "UiPath.OmniPage.Activities": {
+      "Id": "UiPath.OmniPage.Activities",
+      "Version": "1.2.0",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.2.1, )"
+        },
+        {
+          "Item1": "UiPath.OmniPage.Bundle",
+          "Item2": "[1.0.2, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        }
+      ]
+    },
+    "UiPath.OmniPage.Bundle": {
+      "Id": "UiPath.OmniPage.Bundle",
+      "Version": "1.0.2",
+      "Dependencies": []
+    },
+    "UiPath.Persistence.Activities": {
+      "Id": "UiPath.Persistence.Activities",
+      "Version": "1.0.1",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.FormActivityLibrary.Contracts",
+          "Item2": "[1.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.20, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        }
+      ]
+    },
+    "UiPath.System.Activities": {
+      "Id": "UiPath.System.Activities",
+      "Version": "18.3.6897.22524",
+      "Dependencies": [
+        {
+          "Item1": "CsvHelper",
+          "Item2": "[2.13.5, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.10, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
+        }
+      ]
+    },
+    "UiPath.UIAutomation.Activities": {
+      "Id": "UiPath.UIAutomation.Activities",
+      "Version": "18.3.6897.22543",
+      "Dependencies": [
+        {
+          "Item1": "AvalonEdit",
+          "Item2": "[5.0.3, )"
+        },
+        {
+          "Item1": "Caliburn.Micro",
+          "Item2": "[3.0.1, )"
+        },
+        {
+          "Item1": "Extended.Wpf.Toolkit",
+          "Item2": "[2.8.0, )"
+        },
+        {
+          "Item1": "Humanizer.Core",
+          "Item2": "[2.4.2, )"
+        },
+        {
+          "Item1": "UiPath.Vision",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "UiPath",
+          "Item2": "[9.0.6893.27943, )"
+        }
+      ]
+    },
+    "UiPath.Vision": {
+      "Id": "UiPath.Vision",
+      "Version": "1.1.0",
+      "Dependencies": []
+    },
+    "UiPath.WebAPI.Activities": {
+      "Id": "UiPath.WebAPI.Activities",
+      "Version": "1.4.4",
+      "Dependencies": [
+        {
+          "Item1": "AvalonEdit",
+          "Item2": "[5.0.3, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "RestSharp",
+          "Item2": "[106.3.1, )"
+        }
+      ]
+    }
+  }
+}

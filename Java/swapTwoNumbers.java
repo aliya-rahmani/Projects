@@ -10,12 +10,13 @@ public class swapTwoNumbers {
 	// swap method, to swap the values, takes two integer numbers as parameter
 	public static void swap(int num1, int num2)
 	{
+		int a=0;
 		System.out.println("Before swapping: " + num1 + " " + num2);
 
 		// swapping
-		num1 = num1 + num2;
-		num2 = num1 - num2;
-		num1 = num1 - num2;
+		a=num1;
+		num1=num2;
+		num2=a;
 
 		System.out.println("After swapping: " + num1 + " " + num2);
 	}

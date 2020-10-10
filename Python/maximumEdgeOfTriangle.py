@@ -8,4 +8,4 @@ def maximumEdgeofTriangle(a,b):
     return "Sides of Triangle cannot be float or double numbers"
 
 
-print(maximumEdgeofTriangle(5,-6))
+print(maximumEdgeofTriangle(5,6))

@@ -12,7 +12,6 @@ int GCD(int x,int y)
         return y;
     }
     return GCD(y%x,x);
-
 }
 
 //LCM
@@ -29,11 +28,10 @@ int main()
 {
     int a,b;
     cout<<"Enter the value of a and b:";
-    cin >>a>>b;
+    cin>>a>>b;
     int c = GCD(a,b);
     int lcm_of_two_numbers = LCM(a,b);
-    cout <<"GCD of two numbers:"<<c<<endl;
-    cout<<"LCM of two Numbers:"<<lcm_of_two_numbers<<endl;
+    cout<<c<<endl;
+    cout<<lcm_of_two_numbers<<endl;
     return 0;
-
 }

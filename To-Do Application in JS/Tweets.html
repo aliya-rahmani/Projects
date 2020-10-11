@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    </style>
+</head>
+<body>
+        <div class="container">
+                <h3 class="display-3">
+                        <center>
+                        To-Do Web App
+                        <small class="text-muted">Add in your Tweets</small>
+                        <p class="lead">
+                            You can add in your Posts/Tweets.
+                        </p>
+                        </center>
+                    </h3><br><br>
+            <div class="row">
+                <div class="col">
+                            <div class="input-group">
+                                    <div class="input-group-prepend">
+                                    <span class="input-group-text">Add your Tweets</span>
+                                    </div>
+                                    <textarea class="form-control" aria-label="Add your Tweets" rows="6" id="text"></textarea>
+                            </div><br>
+                            <center><button type="button" class="btn btn-outline-primary" id="button">Add Post</button></center>
+                            <br><br>
+                </div>
+        <div class="col">
+            <h5 class="display-5">Tweets</h5>
+                <ul class="list-group" id="unordered">
+                </ul>
+        </div>
+        </div>
+        </div>
+        <script>
+            eventlisteners();
+            function eventlisteners()
+            {
+                document.getElementById('button').addEventListener('click',addtweet);
+                document.addEventListener('DOMContentLoaded',localstorageOnload);
+            }
+            function addtweet(e)
+            {
+                e.preventDefault();
+                var element = document.createElement('li');
+                element.className = 'list-group-item d-flex justify-content-between align-items-center';
+                var removebtn = document.createElement('i');
+                removebtn.className = "fa fa-close";
+                var content = document.getElementById('text').value;
+                if(content == '')
+                {
+                    alert('Please Type Something !');
+                }
+                else
+                {
+                    element.appendChild(document.createTextNode(content));
+                    element.appendChild(removebtn);
+                    var ul = document.getElementById('unordered');
+                    ul.appendChild(element);
+                    document.getElementById('text').value = '';
+                    removebtn.addEventListener('click',function()
+                    {
+                        element.remove();
+                    });
+                    addtweetlocalstorage(content);
+                    function addtweetlocalstorage(content)
+                    {
+                        let tweets = gettweetsfromstorage();
+                        tweets.push(content);
+                        localStorage.setItem('tweets',JSON.stringify(tweets));
+                    }
+                    function gettweetsfromstorage()
+                    {
+                        let tweets;
+                        const tweetsls = localStorage.getItem('tweets');
+                        if(tweetsls === null)
+                        {
+                            tweets = [];
+                        }
+                        else
+                        {
+                            tweets = JSON.parse(tweetsls);
+                        }
+                        return tweets;
+                    }
+                    function localstorageOnload()
+                    {
+                        let tweets = gettweetsfromstorage();
+                        tweets.forEach(function(content){
+                            var element = document.createElement('li');
+                            element.className = 'list-group-item d-flex justify-content-between align-items-center';
+                            var removebtn = document.createElement('i');
+                            removebtn.className = "fa fa-close";
+                            var content = document.getElementById('text').value;
+                            element.appendChild(document.createTextNode(content));
+                            element.appendChild(removebtn);
+                            var ul = document.getElementById('unordered');
+                            ul.appendChild(element);
+                        });
+                    }
+                }
+            }
+        </script>
+</body>
+</html>

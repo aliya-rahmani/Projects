@@ -1,0 +1,57 @@
+{%extends "layout.html" %}
+
+{% block sub_content %}
+<div class="text-center">
+  <h1> User Registration </h1>
+</div>
+<form class="form-horizontal" method="POST">
+
+  <div class="form-group">
+    <label class="control-label col-sm-2">First Name</label>
+    <div class="col-sm-5">
+      <input type="text" name="first_name"/>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Last Name</label>
+      <div class="col-sm-5">
+        <input type="text" name="last_name"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Username</label>
+      <div class="col-sm-5">
+        <input type="text" name="username"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Email</label>
+      <div class="col-sm-5">
+        <input type="text" name="email"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Password</label>
+      <div class="col-sm-5">
+        <input type="password" name="password"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Confirm Password</label>
+      <div class="col-sm-5">
+        <input type="password" name="confirm_password"/>
+      </div>
+    </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="Submit" >Submit </button>
+    </div>
+  </div>
+</form>
+{% endblock %}

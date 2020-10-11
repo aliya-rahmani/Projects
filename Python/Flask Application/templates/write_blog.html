@@ -1,0 +1,29 @@
+{%extends "layout.html" %}
+
+{% block sub_content %}
+<div class="text-center">
+  <h1> Write a new blogpost </h1>
+</div>
+<form class="form-horizontal" method="POST">
+  <div class="form-group">
+    <label class="control-label col-sm-2">Title</label>
+    <div class="col-sm-5">
+      <input type="text" name="title"/>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Body</label>
+      <div class="col-sm-5">
+        <textarea class="ckeditor" name="body"></textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="Submit" >Submit </button>
+      </div>
+    </div>
+
+</form>
+{% endblock %}

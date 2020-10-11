@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func insertionSort(items []int) []int {
 	for currentIndex := 1; currentIndex < len(items); currentIndex++ {
 		temporary := items[currentIndex]
@@ -12,10 +10,4 @@ func insertionSort(items []int) []int {
 		items[iterator] = temporary
 	}
 	return items
-}
-
-func main() {
-	a := []int{1,5,3,4,2,8}
-	b := insertionSort(a)
-	fmt.Println(b)
 }

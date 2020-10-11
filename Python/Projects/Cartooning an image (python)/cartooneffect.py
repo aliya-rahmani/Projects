@@ -1,3 +1,5 @@
+import cv2
+
 
 class Cartoonizer: 
 	"""Cartoonizer effect 
@@ -18,20 +20,20 @@ class Cartoonizer:
 
 		# downsample image using Gaussian pyramid 
 		img_color = img_rgb 
-		for _ in xrange(numDownSamples): 
+		for _ in range(numDownSamples): 
 			img_color = cv2.pyrDown(img_color) 
 
 		#cv2.imshow("downcolor",img_color) 
 		#cv2.waitKey(0) 
 		# repeatedly apply small bilateral filter instead of applying 
 		# one large filter 
-		for _ in xrange(numBilateralFilters): 
+		for _ in range(numBilateralFilters): 
 			img_color = cv2.bilateralFilter(img_color, 9, 9, 7) 
 
 		#cv2.imshow("bilateral filter",img_color) 
 		#cv2.waitKey(0) 
 		# upsample image to original size 
-		for _ in xrange(numDownSamples): 
+		for _ in range(numDownSamples): 
 			img_color = cv2.pyrUp(img_color) 
 		#cv2.imshow("upscaling",img_color) 
 		#cv2.waitKey(0) 

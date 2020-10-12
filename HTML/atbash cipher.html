@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Demo Cipher</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+function runRevCipher(){
+  var cipherText = $('#finish').val();
+  var cipherFinish = '';
+
+  for(i=0; i<cipherText.length; i++){
+     var letter = cipherText[i];
+     var upper = (letter == letter.toUpperCase());
+     letter = letter.toLowerCase();
+
+     var index = alphabet.indexOf(letter);
+     if(index == -1)
+       cipherFinish += letter;
+     else {
+       var nextLetter = alphabet[25 - index];
+       if(upper)
+         nextLetter = nextLetter.toUpperCase();
+       cipherFinish += nextLetter;
+     }
+  }
+
+  $('#cypher').val(cipherFinish);
+}
+
+function runCipher(){
+  var cipherText = $('#cypher').val();
+  var cipherFinish = '';
+
+  for(i=0; i<cipherText.length; i++){
+     var letter = cipherText[i];
+     var upper = (letter == letter.toUpperCase());
+     letter = letter.toLowerCase();
+
+     var index = alphabet.indexOf(letter);
+     if(index == -1)
+       cipherFinish += letter;
+     else {
+       var nextLetter = alphabet[25 - index];
+       if(upper)
+         nextLetter = nextLetter.toUpperCase();
+       cipherFinish += nextLetter;
+     }
+  }
+
+  $('#finish').val(cipherFinish);
+}
+
+$(document).ready(function() {
+  $('#cypher').keypress(function(){
+    setTimeout(function(){ runCipher(); },20);
+  });
+  $('#cypher').blur(function(){
+    runCipher();
+  });
+  $('#finish').keypress(function(){
+    setTimeout(function(){ runRevCipher(); },20);
+  });
+  $('#finish').blur(function(){
+    runRevCipher();
+  });
+});
+    </script>
+    </head>
+    <body>
+<style>
+body{
+  margin: 0;
+}
+#container{
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+
+}
+.speech{
+  padding: 40px 0;
+  color: black;
+  text-shadow: 0 0 2px gray;
+  font: bold 36px 'Open Sans', sans-serif;
+  margin: auto;
+  width: 100%;
+  max-width: 580px;
+}
+.input{
+  margin: auto;
+  width: 100%;
+  max-width: 580px;
+}
+.input input{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  font: 20px 'Open Sans', sans-serif;
+}
+.input input[type="range"]{
+  color: #444;
+  font: bold 19px sans-serif;
+}
+input[type=text]:focus {
+  background-color: lightblue;
+}
+.input input[type="range"]:before{
+  content: "Faster";
+  text-shadow: 0 0 5px white;
+}
+
+.input input[type="range"]:after{
+  content: "Slower";
+  text-shadow: 0 0 5px white;
+}
+</style>
+        <div id="container">
+  <div class="speech">Put the text to encrypt in the input</div>
+  <div class="input">
+    <form id="form">
+      Plaintext:
+      <input type="text" id="cypher"/>
+      <br/>
+      <br/>
+      <br/>
+      Ciphertext:
+      <input type="text" id="finish"/>
+
+      <br/>
+      <br/>
+      <br/>
+
+    </form>
+  </div>
+</div>
+    </body>
+</html>

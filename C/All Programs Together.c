@@ -75,11 +75,11 @@ int main()
 			swap_pointer();
 			break;
 		case 14:
-			gcd();
-			break;
+			// gcd();
+			// break;
 		case 15:
-			lcm();
-			break;
+			// lcm();
+			// break;
 		case 16:
 			comp();
 			break;

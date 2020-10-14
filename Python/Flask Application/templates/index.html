@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block sub_content %}
+  {% if blogs %}
+    {% for blog in blogs %}
+      <h3> <a href="/blogs/{{ blog['blog_id'] }}">{{blog['title']}} </a> </h3>
+      <h5>Written by {{blog['author']}}</h5>
+
+      <hr>
+    {% endfor %}
+  {% else %}
+    <h3>No blogs have been written yet</h3>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Designing Tables</title>
+        <style>
+            table.cal{
+	            color:#06425C;
+	            border-spacing: 0;
+	            border: 3px solid #000000;
+	            -webkit-border-radius: 25px 25px 0 0;
+                border-radius: 0 0 25px 25px;
+                margin:0 auto;
+            }
+            caption{
+                text-transform: uppercase;
+                font-size: large;
+                color:#000000;
+                background-color: #ff6347;
+                border:2px solid black;
+            }
+
+            tr:nth-child(odd){
+                background-color: #7fff00;
+            }
+            tr:nth-child(even) {
+	            background: #CDBB79;
+            }
+
+            tr:last-child{
+	            -webkit-border-radius: 25px 25px 0 0;
+	            border-radius: 0 0 25px 25px;	
+            }
+            tr:last-child>td:first-child {
+	            -webkit-border-radius: 0 0 0 25px;
+	            border-radius: 0 0 0 25px;	
+            }
+            tr:last-child>td:last-child{
+	            -webkit-border-radius: 0 0 25px 0;
+	            border-radius: 0 0 25px 0;	
+            }
+            th{
+                padding-top: 5px;
+                padding-bottom: 2px;
+            }
+            .cal th, .cal td{
+	            margin: 2px;
+	            padding-bottom: 2px;
+            }
+            th{
+	            text-align: center;
+	            background: #FFFFFF;
+            }
+            .cal td{
+	            width:75px;
+	            height:75px;
+                margin: 0 auto;
+            }
+            .old{
+	            padding:0;
+	            margin: 0;
+	            background-color: #51A39D;
+	            color:rgba(0,0,0,.25);
+                background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/holiday.png") no-repeat;
+                border-spacing: 0;
+            }
+            span{
+	            display: block;
+	            text-align: center;
+	            color: #000000;
+	            visibility: hidden;
+            }
+
+            td:hover>span{
+	            visibility:visible;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="cal">
+            <caption>December 2020</caption>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thr</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="old">27</td>
+                <td class="old">28</td>
+                <td class="old">29</td>
+                <td class="old">30</td>
+                <td>1</td>
+                <td>2*<span>Meeting</span></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10*<span>Shubham Birthday</span></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>25*<span>Christmas</span></td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+        <style>
+            body{
+                margin:0;
+                font-family: Oswald;
+            }
+            .main{
+                margin:0 auto;
+                max-width: 450px;
+                
+            }
+            h1{
+                text-align: center;
+            }
+            p{
+                font-size: 14px;
+                font-family: Helvetica, sans-serif;
+                text-align: center;
+                margin:10px;
+                font-weight: 700;
+                color:  #FAA41F  ;
+            }
+            h3{
+                margin-bottom:5px;
+                font-weight: 400;
+            }
+            input{
+                border-radius: 5px;
+                font-size: 18px;
+                padding:10px;
+                width:100%;
+                border:1px solid #D0D3D4;
+                box-shadow: 0px 1px 1px #B3B6B7 ;
+            }
+            button{
+                margin-top:20px;
+                font-size: 20px;
+                width: 140px;
+                padding:13px;
+                border-radius: 5px;
+                border:none;
+                color:cornsilk;
+                font-weight: 500;
+                background-color:#4B4D4D ;
+            }
+            input:focus, button:focus{
+                outline:none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+        <h1>
+            Validating Web Forms
+        </h1>
+        <form action="">
+            <h3>First Name</h3>
+            <input type="text">
+            <p class="firstName">First name must be alphanumeric and contain 3 - 16 characters</p>
+
+            <h3>Last Name</h3>
+            <input type="text">
+            <p class="lastName">Last name must be alphanumeric and contain 3 - 16 characters</p>
+
+            <h3>Email</h3>
+            <input type="email">
+            <p class="email">Email must be a valid address e.g. example@example.com</p>
+
+            <h3>Password</h3>
+            <input type="password">
+
+            <p class="password">Password must be alphanumeric (@,_ and - are also allowed) and between 6 - 20 characters</p>
+
+            <h3>Telephone</h3>
+            <input type="text">
+            <p class="phone">A valid Telephone number (11 digits and 333-333-3334)</p>
+
+            <h3>Your Bio</h3>
+            <input type="text">
+            <p class="bio">Bio must contain only lowercase letters, underscores, hyphens and be 8 - 50 characters</p>
+
+            <button type="submit" disabled>Submit</button>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+    </body>
+</html>

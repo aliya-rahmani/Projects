@@ -1,0 +1,34 @@
+*The URL Should be for cgi-bin for manually doing is http//:IP/cgi-bin/filename?<var name>=<desired command>
+*Example --> http://192.168.99.101/cgi-bin/anycmd1.py?x=date
+
+
+#! /usr/bin/python3
+
+print("content-type: text/html")
+print()
+
+import subprocess
+import cgi
+
+form=cgi.FieldStorage()
+cmd=form.getvalue("x")
+
+
+if(("ip" in cmd) or ("ip address" in cmd) or ("ifconfig" in cmd)):
+    a=subprocess.getoutput('ifconfig')
+if("date" in cmd):
+    a=subprocess.getoutput('date')
+if("ls" in cmd) or ("list" in cmd):
+    a=subprocess.getoutput('ls')
+if(("pwd" in cmd) or ("folder" in cmd) or ("directory" in cmd)) :    
+    a=subprocess.getoutput('pwd')
+if("user" in cmd) or ("username" in cmd):
+    a=subprocess.getoutput('id varanasi')
+if("ping" in cmd):
+    a=subprocess.getoutput("ping 8.8.8.8")
+if("cal" in cmd) or ("calender" in cmd):
+    a=subprocess.getoutput('cal')
+if("docker ps" in cmd) or ("os" in cmd):
+    a=subprocess.getoutput("docker ps")
+
+print(a)

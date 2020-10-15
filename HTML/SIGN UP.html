@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        /* 
+        -May want to add "border-box for "box-sizing so padding does not affect width
+        -Reset margin and padding 
+       */
+       box-sizing: border-box;
+       margin: 0%;
+       padding: 0%;
+       font-family: 'Raleway';
+
+      }
+
+      body {
+        /* 
+          -Background color is #344a72
+        */
+        background-color: #344a72;
+      }
+
+      a {
+        /* 
+        Underlined links are ugly :)
+       */
+       text-decoration-style: none;
+      }
+
+      #container {
+        /* 
+        -Remember, margin: auto on left and right will center a block element 
+        -I would also set a "max-width" for responsiveness
+        -May want to add some padding
+        */
+        margin: auto;
+        max-width: 700px;
+        padding: 100px;;
+      }
+
+      .form-wrap {
+        /* 
+          This is the white area around the form and heading, etc
+        */
+        background-color: white;
+        padding: 20px;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        /* 
+          May want to center these
+        */
+        text-align: center;
+        padding-bottom: 10px;;
+        line-height: 1.6em;
+      }
+
+      .form-wrap .form-group {
+        /* 
+          Each label, input is wrapped in .form-group
+        */
+        padding: 10px;;
+      }
+
+      .form-wrap .form-group label {
+        /* 
+          Label should be turned into a block element
+        */
+        display: block;
+      }
+
+      .form-wrap .form-group input {
+        /* 
+          Inputs should reach accross the .form-wrap 100% and have some padding
+        */
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;;
+      }
+
+      .form-wrap button {
+        /* 
+          Button should wrap accross 100% and display as block
+          Background color for button is #49c1a2
+        */
+        width: 100%;
+        display: block;
+        background-color: #49c1a2;
+        padding: 10px;
+        border-radius: 5px;;
+
+      }
+
+      .form-wrap button:hover {
+        /* 
+          Hover background color for button is #37a08e
+        */
+        background-color: #37a08e;
+      }
+
+      .form-wrap .bottom-text {
+        /* 
+          Bottom text is smaller
+        */
+        text-align: center;
+      }
+
+      footer {
+        /* 
+        Should be centered
+       */
+       text-align: center;
+      }
+
+      footer a {
+        /* 
+          Footer link color is #49c1a2
+        */
+        color: #49c1a2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute</p>
+        <form>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="firstName" id="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="lastName" id="last-name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            <input type="password" name="pasword2" id="password2" />
+          </div>
+          <button type="submit" class="btn">Sign Up</button>
+          <p class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p>Already have an account? <a href="#">Login Here</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

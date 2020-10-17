@@ -1,0 +1,217 @@
+/* .im{
+    background-image: url(https://image.shutterstock.com/z/stock-photo-stay-home-stay-safe-let-s-stop-covid-stay-home-in-covid-coronavirus-outbreak-stay-in-the-1681876264.jpg);
+    opacity : 0.5;
+    width : 100%;
+    height : 100%;
+
+} */
+
+
+
+/* .slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+     z-index: 0; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+   */
+  
+/*    .full{
+      z-index: 1;
+      color : black;
+      font-weight: bold;
+  }
+  
+  
+  .slideshow { 
+     background-image: url(https://image.shutterstock.com/image-illustration/infographics-logo-symbol-coronavirus-covid2019-600w-1711776442.jpg); 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+     z-index: 0;
+     
+  }  */
+  
+/*   .slideshow {
+    background-image: url(https://image.shutterstock.com/z/stock-photo-stay-home-stay-safe-let-s-stop-covid-stay-home-in-covid-coronavirus-outbreak-stay-in-the-1681876264.jpg)
+  } */
+  
+/*   .slideshow li:nth-child(1) { 
+    background-image: url(http://i.imgur.com/K3mPv14.jpg) 
+  }
+  .slideshow li:nth-child(2) { 
+    background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+    animation-delay: 10s; 
+  }
+  .slideshow li:nth-child(3) { 
+    background-image: url(http://i.imgur.com/emvhOnb.jpg);
+    animation-delay: 20s; 
+  }
+  .slideshow li:nth-child(4) { 
+    background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
+    animation-delay: 30s; 
+  }
+  .slideshow li:nth-child(5) { 
+    background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+    animation-delay: 40s; 
+  } */
+  
+  
+  /* @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+  }
+  
+
+ */
+
+
+body{
+    font-family: 'Baloo Da 2', cursive;
+    z-index:100;
+    font-size: 1.2rem;
+/*     background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(https://image.shutterstock.com/z/stock-photo-stay-home-stay-safe-let-s-stop-covid-stay-home-in-covid-coronavirus-outbreak-stay-in-the-1681876264.jpghttps://image.shutterstock.com/z/stock-photo-stay-home-stay-safe-let-s-stop-covid-stay-home-in-covid-coronavirus-outbreak-stay-in-the-1681876264.jpg);
+      background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+    }
+
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity:0.7;
+        background: var(--color-darkblue);
+        background-image: linear-gradient(
+            115deg,
+            rgba(58, 58, 158, 0.8),
+            rgba(136, 136, 206, 0.7)
+          ),
+          url(https://image.shutterstock.com/z/stock-photo-stay-home-stay-safe-let-s-stop-covid-stay-home-in-covid-coronavirus-outbreak-stay-in-the-1681876264.jpghttps://image.shutterstock.com/z/stock-photo-stay-home-stay-safe-let-s-stop-covid-stay-home-in-covid-coronavirus-outbreak-stay-in-the-1681876264.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+#main_head{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.state_list,.district_list{
+    text-align: center;
+    list-style: none;
+}
+
+
+#total{
+    text-align: center;
+    list-style: none;
+    
+    margin-bottom: 30px;
+}
+
+
+.details{
+    text-align: center;
+    list-style: none;
+}
+
+.details2{
+    text-align: center;
+    list-style: none;
+}
+
+.typing{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* li{
+    
+    border: none;
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      )
+}  */
+
+
+
+.button1:hover{
+    cursor: context-menu;
+    font-size : 1.4rem;
+}
+
+.button2:hover{
+    cursor: context-menu;
+    font-size : 1.4rem;
+}
+
+#here{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding:30px;
+    border-radius: 40px;
+    font-size:1.3rem;    
+    border-radius: 40px;
+    width:100%;
+    height:30px;
+    background-color:#f7f7f7;
+    border:4px solid steelblue;
+    color:steelblue;    
+}
+
+
+#input1{
+    width:40%;
+    height:30px;
+    background-color:#f7f7f7;
+    border:4px solid steelblue;
+    color:steelblue;
+    margin:0;
+    box-sizing: border-box;
+    padding:30px;
+    border-radius: 40px;
+    font-size:1.3rem;
+}
+
+
+
+
+

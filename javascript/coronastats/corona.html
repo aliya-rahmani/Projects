@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>corona</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap" rel="stylesheet"> 
+        <link href="corona.css"  rel="stylesheet">
+        
+        <script src = corona.js></script>
+    </head>
+
+<body>
+<div class="full">
+<h3 id="main_head">CORONA STATS IN INDIA</h3>
+<div id="total">
+     <h4>Total</h4>
+     <div id="total_value"><h5>Loading...</h5></div>
+</div>
+<div class="container-fluid">
+    <div class="row typing">
+        <div class="col">
+        <input type="text" placeholder="Enter State Name" id="input1">
+    </div>
+    </div>
+    <div class="row">
+       <div class="col-4 state_list">
+            <h4>Effected States</h4>
+            <div id = "li"><h5>Loading...</h5></div>
+       </div>
+       <div class="col-4">
+           <div class="details"></div>
+           <div id="input2"> 
+            <!-- <input type ="text" placeholder="Enter district name" id="input2"> -->
+           </div> 
+           <div class="details2"></div>
+       </div>
+       <div class="col-4 district_list">
+            <h4>Districts</h4>
+            <div id="li2"></div>
+       </div>
+    </div>
+</div>
+</div>
+<div class="slideshow">
+  
+</div>
+</body>
+</html>
+
+<!-- 
+<script>
+
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://corona-virus-world-and-india-data.p.rapidapi.com/api_india",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "corona-virus-world-and-india-data.p.rapidapi.com",
+		"x-rapidapi-key": "bcd247492amsh6e64b6f5354d967p1a13fejsncc365ce3c2dc"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+    // console.log(response.state_wise);
+    
+    // console.log(Object.getOwnPropertyNames(response.state_wise));
+     $("#total_value").append("<li>Total Cases: "+response.total_values.confirmed+"</li>");
+     $("#total_value").append("<li>Active Cases: "+response.total_values.active+"</li>");
+     $("#total_value").append("<li>Death Cases: "+response.total_values.deaths+"</li>");
+     $("#total_value").append("<li>Recovered: "+response.total_values.recovered+"</li>");
+    var a = [];
+    a = Object.getOwnPropertyNames(response.state_wise);
+
+
+    for(var i = 0;i<a.length;i++){
+    $("#li").append("<li><button>" + a[i] + "</button></li>")
+    
+    }
+
+    console.log(response);
+
+var state;
+
+
+$("button").click(function(){
+    
+    
+    state = $(this).html();
+    console.log(state);
+    // for(var i = 0;i<a.length;i++){
+
+// if(state == response["state_wise"][state]["state"]){
+         
+    $(".details").html("<h4>"+response["state_wise"][state]["state"]+ "</h4>")
+    $(".details").append("<li>Total Cases: "+response["state_wise"][state]["confirmed"]+"</li>");
+    $(".details").append("<li>Active Cases: "+response["state_wise"][state]["active"]+"</li>");
+    $(".details").append("<li>Total Deaths: "+response["state_wise"][state]["deaths"]+"</li>");
+    $(".details").append("<li>Recovered: "+response["state_wise"][state]["recovered"]+"</li>");
+    $(".details2").html(" ");
+               //   console.log("got the country at " + i);
+//    }
+// }
+
+     districtslist(state);
+})
+
+
+//  $("input[type='text']").keypress(function(event){
+
+    $("#input1").keypress(function(event){   
+if(event.which===13){
+    state = $(this).val();
+    $(this).val("");
+    state = titleCase(state);
+    console.log(state);
+
+    console.log(response["state_wise"][state]["active"]);
+    $(".details").html("<h4>"+response["state_wise"][state]["state"]+ "</h4>")
+    $(".details").append("<li>Total Cases: "+response["state_wise"][state]["confirmed"]+"</li>");
+    $(".details").append("<li>Active Cases: "+response["state_wise"][state]["active"]+"</li>");
+    $(".details").append("<li>Total Deaths: "+response["state_wise"][state]["deaths"]+"</li>");
+    $(".details").append("<li>Recovered: "+response["state_wise"][state]["recovered"]+"</li>");
+    $(".details2").html(" ");
+    // state = state[0].toUpperCase() +  state.slice(1); 
+    // for(var i = 0;i<a.length;i++){
+
+    // if(state == response[state_wise]){
+        districtslist(state);
+
+    }})
+
+  function districtslist(state){
+            // console.log("in the function");
+            // console.log($("#li2 li").html());
+            //  state = $("#li2 li").html();
+        //   state =  $("#li2 li").get(0);
+        //   console.log(state);
+            // if(state){
+      var b=[];
+         b  = Object.getOwnPropertyNames(response["state_wise"][state]["district"]);
+           $("#li2").html(" ");
+           for(var i =0;i<b.length;i++){
+            $("#li2").append("<li><button class='button2'>" + b[i] + "</button></li>")
+           }
+
+            $("#input2").html("<input type='text' id ='here' placeholder='Enter district name'>")
+
+
+               districtdetails(state);
+    }
+ /*       $(".details").html("<h4>"+response.countries_stat[i].country_name+"</h4>")
+        $(".details").append("<li>Total Cases: "+response.countries_stat[i].cases+"</li>")
+        $(".details").append("<li>Active Cases: "+response.countries_stat[i].active_cases+"</li>")
+        $(".details").append("<li>Total Deaths: "+response.countries_stat[i].deaths+"</li>")
+                    //   console.log("got the country at " + i);
+        }
+    }
+    console.log(response.countries_stat[0]);
+}})
+ */
+function districtdetails(state){
+
+var districtu;
+// console.log("enter the details of district");
+// console.log(state + " this is the state");
+$(".button2").click(function(){
+    
+    
+    districtu = $(this).html();
+    console.log(districtu);
+    $(".details2").html("<h4>"+districtu+"</h4>")
+    $(".details2").append("<li>Total Cases: "+response["state_wise"][state]["district"][districtu]["confirmed"]+"</li>");
+    $(".details2").append("<li>Active Cases: "+response["state_wise"][state]["district"][districtu]["active"]+"</li>");
+    $(".details2").append("<li>Total Deaths: "+response["state_wise"][state]["district"][districtu]["deceased"]+"</li>");
+    $(".details2").append("<li>Recovered: "+response["state_wise"][state]["district"][districtu]["recovered"]+"</li>");
+
+
+
+
+    // for(var i = 0;i<a.length;i++){
+
+// if(state == response["state_wise"][state]["state"]){
+         
+ /*    $(".details").html("<h4>"+response["state_wise"][state]["state"]+ "</h4>")
+    $(".details").append("<li>Total Cases: "+response["state_wise"][state]["confirmed"]+"</li>");
+    $(".details").append("<li>Active Cases: "+response["state_wise"][state]["active"]+"</li>");
+    $(".details").append("<li>Total Deaths: "+response["state_wise"][state]["deaths"]+"</li>");
+    $(".details").append("<li>Recovered: "+response["state_wise"][state]["recovered"]+"</li>");
+  */              //   console.log("got the country at " + i);
+//    }
+// }
+
+     
+})
+
+
+
+
+$("#here").keypress(function(event){  
+
+if(event.which===13){
+
+    // console.log("details entered");
+
+    districtu = $(this).val();
+    // districtu = document.getElementById("input2").value;
+        // console.log("here is the district: " + districtu);
+
+    $(this).val("");
+    districtu = titleCase(districtu);
+    console.log(districtu);
+    console.log(state);
+
+    // console.log(response["state_wise"][state]["active"]);
+    // $(".details2").html("<h4>"+response["state_wise"][state]["state"]+ "</h4>")
+    $(".details2").html("<h4>"+districtu+"</h4>")
+    $(".details2").append("<li>Total Cases: "+response["state_wise"][state]["district"][districtu]["confirmed"]+"</li>");
+    $(".details2").append("<li>Active Cases: "+response["state_wise"][state]["district"][districtu]["active"]+"</li>");
+    $(".details2").append("<li>Total Deaths: "+response["state_wise"][state]["district"][districtu]["deceased"]+"</li>");
+    $(".details2").append("<li>Recovered: "+response["state_wise"][state]["district"][districtu]["recovered"]+"</li>");
+    // state = state[0].toUpperCase() +  state.slice(1); 
+    // for(var i = 0;i<a.length;i++){
+
+    // if(state == response[state_wise]){
+    
+
+    }})
+
+}
+
+});
+
+
+
+function titleCase(str) {
+   var splitStr = str.toLowerCase().split(' ');
+   for (var i = 0; i < splitStr.length; i++) {
+       // You do not need to check if i is larger than splitStr length, as your for does that for you
+       // Assign it back to the array
+       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+   }
+   // Directly return the joined string
+   return splitStr.join(' '); 
+}
+
+
+
+</script> -->

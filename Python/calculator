@@ -58,13 +58,13 @@ while True:
 
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
-        break
+        
         elif choice == '5':
             print(num1, "^2 =", square(num1))
-        break
+        
         elif choice == '6':
             print(num1, "^", num2, "=", power(num1, num2))
-        break
+        
         elif choice == '7':
             print(num1, "^(1/2) =", sqrt(num1))
         break

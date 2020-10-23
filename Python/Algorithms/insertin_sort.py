@@ -1,12 +1,17 @@
-def insertionSort(array):
-   for index in range(1,len(array)):
+# Python code for Insertion Sort
+def insertionSort(nlist):
+   for index in range(1,len(nlist)):
 
-     currentvalue = array[index]
+     currentvalue = nlist[index]
      position = index
 
-     while position>0 and array[position-1]>currentvalue:
-         array[position]=array[position-1]
+     while position>0 and nlist[position-1]>currentvalue:
+         nlist[position]=nlist[position-1]
          position = position-1
 
-     array[position]=currentvalue
-     return array
+     nlist[position]=currentvalue
+
+# Running a test case
+nlist = [14,46,43,27,57,41,45,21,70]
+insertionSort(nlist)
+print(nlist)

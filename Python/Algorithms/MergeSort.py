@@ -1,47 +1,57 @@
-# Python program for implementation of MergeSort 
-def mergeSort(arr): 
-    if len(arr) >1: 
-        mid = len(arr)//2 # Finding the mid of the array 
-        L = arr[:mid] # Dividing the array elements  
-        R = arr[mid:] # into 2 halves 
+# funtion to divide the lists in the two sublists  
+def merge_sort(list1, left_index, right_index):  
+    if left_index >= right_index:  
+        return  
   
-        mergeSort(L) # Sorting the first half 
-        mergeSort(R) # Sorting the second half 
+    middle = (left_index + right_index)//2  
+    merge_sort(list1, left_index, middle)  
+    merge_sort(list1, middle + 1, right_index)  
+    merge(list1, left_index, right_index, middle)  
   
-        i = j = k = 0
-          
-        # Copy data to temp arrays L[] and R[] 
-        while i < len(L) and j < len(R): 
-            if L[i] < R[j]: 
-                arr[k] = L[i] 
-                i+= 1
-            else: 
-                arr[k] = R[j] 
-                j+= 1
-            k+= 1
-          
-        # Checking if any element was left 
-        while i < len(L): 
-            arr[k] = L[i] 
-            i+= 1
-            k+= 1
-          
-        while j < len(R): 
-            arr[k] = R[j] 
-            j+= 1
-            k+= 1
   
-# Code to print the list 
-def printList(arr): 
-    for i in range(len(arr)):         
-        print(arr[i], end =" ") 
-    print() 
+    # Defining a function for merge the list  
+def merge(list1, left_index, right_index, middle):  
   
-# driver code to test the above code 
-if __name__ == '__main__': 
-    arr = [12, 11, 13, 5, 6, 7]  
-    print ("Given array is", end ="\n")  
-    printList(arr) 
-    mergeSort(arr) 
-    print("Sorted array is: ", end ="\n") 
-    printList(arr) 
+  
+   # Creating subparts of a lists  
+    left_sublist = list1[left_index:middle + 1]  
+    right_sublist = list1[middle+1:right_index+1]  
+  
+    # Initial values for variables that we use to keep  
+    # track of where we are in each list1  
+    left_sublist_index = 0  
+    right_sublist_index = 0  
+    sorted_index = left_index  
+  
+    # traverse both copies until we get run out one element  
+    while left_sublist_index < len(left_sublist) and right_sublist_index < len(right_sublist):  
+  
+        # If our left_sublist has the smaller element, put it in the sorted  
+        # part and then move forward in left_sublist (by increasing the pointer)  
+        if left_sublist[left_sublist_index] <= right_sublist[right_sublist_index]:  
+            list1[sorted_index] = left_sublist[left_sublist_index]  
+            left_sublist_index = left_sublist_index + 1  
+        # Otherwise add it into the right sublist  
+        else:  
+            list1[sorted_index] = right_sublist[right_sublist_index]  
+            right_sublist_index = right_sublist_index + 1  
+  
+  
+        # move forward in the sorted part  
+        sorted_index = sorted_index + 1  
+  
+       
+    # we will go through the remaining elements and add them  
+    while left_sublist_index < len(left_sublist):  
+        list1[sorted_index] = left_sublist[left_sublist_index]  
+        left_sublist_index = left_sublist_index + 1  
+        sorted_index = sorted_index + 1  
+  
+    while right_sublist_index < len(right_sublist):  
+        list1[sorted_index] = right_sublist[right_sublist_index]  
+        right_sublist_index = right_sublist_index + 1  
+        sorted_index = sorted_index + 1  
+  
+list1 = [44, 65, 2, 3, 58, 14, 57, 23, 10, 1, 7, 74, 48]  
+merge_sort(list1, 0, len(list1) -1)  
+print(list1)  

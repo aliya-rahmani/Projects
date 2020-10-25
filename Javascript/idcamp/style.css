@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+li a {
+    display: block;
+    padding: 5px 10px;
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    min-height: 150px;
+    width: 100%;
+}
+
+.dark_blue {
+    background-color: #2A457A;
+    color: #efefef;
+}
+
+.light_blue {
+    background-color: #099DD9;
+}
+
+.green {
+    background-color: #0C8542;
+}
+
+.red {
+    background-color: #EC1D3B;
+}
+
+.orange {
+    background-color: #F79420;
+}
+
+
+/*untuk layar device berukuran kecil*/
+@media screen and (min-width: 450px) {
+    .light_blue, .green {
+        width: 50%
+    }
+}
+
+/*untuk layar device berukuran sedang*/
+@media screen and (min-width: 550px) {
+    .red {
+        width: 33%;
+    }
+
+    .orange {
+        width: 67%;
+    }
+}
+
+/*untuk layar device berukuran besar*/
+@media screen and (min-width: 800px) {
+    .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

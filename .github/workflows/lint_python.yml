@@ -6,7 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
+
+      - run: pip install black codespell isort pytest #flake8 
+=======
       - run: pip install black codespell isort pytest # flake8
+
       - run: black --check . || true
       # - run: black --diff . || true
       # - if: matrix.python-version >= 3.6
@@ -14,7 +18,7 @@ jobs:
       #    pip install black
       #    black --check . || true
       - run: codespell --quiet-level=2 || true  # --ignore-words-list="" --skip=""
-      # - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+
       - run: isort --profile black . || true
       - run: pip install -r requirements.txt || true
       - run: pytest . || true

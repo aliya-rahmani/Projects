@@ -1,4 +1,4 @@
-// JANVI VIJAY  19EJDML014
+
 // Implementation of linear queue using array
 
 #include<stdio.h>

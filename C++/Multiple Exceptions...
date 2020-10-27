@@ -1,0 +1,55 @@
+#include<iostream>
+using namespace std;
+const int Max = 3;
+
+class stack
+{
+	private:
+		int st[Max];
+		int top;
+		public:
+			class Full{};
+			class Empty{};
+			
+			stack()
+			{top = -1;}
+			
+			void push(int var)
+			{
+				if(top >= Max-1)
+				throw Full();
+				st[++top] = var;
+			}
+			int pop()
+			{
+				if(top<0)
+				throw Empty();
+				return st[top--];
+			}
+};
+
+int main()
+{
+	stack s1;
+	
+	try
+	{
+		s1.push(15);
+		s1.push(18);
+		s1.push(17);
+		s1.push(19);
+		cout<<"1: "<<s1.pop()<<endl;
+		cout<<"2: "<<s1.pop()<<endl;
+		cout<<"3: "<<s1.pop()<<endl;
+		cout<<"4: "<<s1.pop()<<endl;
+	}
+	catch(stack::Full)
+	{
+		cout<<"Exception: Stack Full"<<endl;
+	}
+	catch(stack::Full)
+	{
+		cout<<"Exception: Stack Empty"<<endl;
+	}
+	return 0;
+}

@@ -1,0 +1,18 @@
+
+def decimal_to_binary(dec): 
+    decimal = int(dec) 
+    print(decimal, " in Binary : ", bin(decimal)) 
+  
+def decimal_to_octal(dec): 
+    decimal = int(dec) 
+    print(decimal, "in Octal : ", oct(decimal)) 
+  
+def decimal_to_hexadecimal(dec): 
+    decimal = int(dec) 
+    print(decimal, " in Hexadecimal : ", hex(decimal)) 
+  
+# Driver program 
+dec = 32
+decimal_to_binary(dec) 
+decimal_to_octal(dec) 
+decimal_to_hexadecimal(dec) 

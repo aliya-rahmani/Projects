@@ -1,0 +1,105 @@
+#include<stdio.h>
+#include<windows.h>
+#define MAX 10
+int top=-1,A[MAX];
+
+
+void push()
+{	
+    if(top>=MAX)
+        {
+            printf("Stack is overflow");
+        }
+        else 
+        {	
+        	printf("\nEnter the value: ");
+            scanf("%d",&A[++top]);
+            printf("\n%d is push on to stack",A[top]);
+        }
+}
+void pop()
+{
+    if(top<0)
+        {
+            printf("Stack is underflow");                   
+        }
+        else
+        {
+            --top;
+            printf("\n%d is pop from stack",A[top+1]);
+        }
+}
+void palindrome()
+{
+    int i,rev[top+1],upper,flag=0;
+    for(i=0,upper=top;i<=top,upper>-1;i++,upper--)
+    {
+        rev[i]=A[top];
+    }
+    for(i=0;i<=top;i++)
+    {
+        if(rev[i]==A[i])
+        {
+            flag=1;
+        }
+        else
+        {
+            flag=0;
+        }
+    }
+    if(flag=1)
+    {
+        printf("It is a palindrome");
+    }
+    else
+    {
+        printf("It is not a palindrome");
+    }
+    
+}
+void display()
+{   
+    int i;
+    for(i=0;i<=top;i++)
+    {
+        printf("%d , ",A[i]);
+    }
+}
+
+int main(void)
+{
+    int choice,value;
+    printf("\t\t\tHello friend");
+    printf("\nEnter \n1. To Push an element on to stack \n2. To Pop an element from stack and \n3. To check if array is palindrome \n4. Display elements of stack \n0. To exit");
+	while(1)
+    {
+        printf("\nEnter your choice: ");
+        scanf("%d",&choice);
+        switch(choice)
+        {
+            case 0:break;
+            case 1:{
+				   		push();
+                   		break;
+                   }
+            case 2:{
+						pop();
+						break;
+				   }
+            case 3:{
+						palindrome();
+						break;
+			       }
+            case 4:{
+						display();
+                   		break;
+				   }
+            default:printf("Invalid choice");
+        }
+        if(choice==0)
+            {
+				printf("Good Bye");
+            	break;
+    		}
+	}
+}

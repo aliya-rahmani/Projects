@@ -1,0 +1,51 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int a,N;
+void Nth_of_AP() 
+{  
+	int d;
+    cout<<"\n Enter the first term of the AP series : ";
+	cin>>a;
+	cout<<"\n Enter the difference : ";
+	cin>>d;
+	cout<<"\n Enter the Nth value whose value is to find out : ";
+	cin>>N;	   
+    cout<<"\n The "<<N<<"th term of the series is : "<<(a + (N-1)*d);  
+	cout<<"\n The Sum of the  A.P. series is : "<<(N * (2* a+(N-1)*d )) /2;     
+} 
+void Nth_of_GP()  
+{  
+	int r,i,GP_num,sum;
+   	cout<<"\n Enter the first term of the GP series : ";
+   	cin>>a;
+   	cout<<"\n Enter the common ratio :";
+   	cin>>r;  
+   	cout<<"\n Enter the Nth value whose value is to find out : ";
+	cin>>N;	   
+	cout<<"\n The "<<N<<"th term of the series is : "<<(a * (int)(pow(r,N-1)));
+    sum=a;
+	for(i=1;i<N;i++)
+	   { 	GP_num = a * pow(r,i);
+        	sum = sum + GP_num;   }  
+    cout<<"\n The Sum of the G.P. series:  "<<sum<<endl;
+}   
+  
+int main()  
+{ 
+    int choice;
+    cout<<"Enter\n 1.For AP\n 2.For GP\n ";
+    cin>>choice;
+    switch(choice)
+    {	case 1: {Nth_of_AP();break;}
+		case 2: {Nth_of_GP();break;}
+		default:cout<<"Wrong choice";
+	}
+	return 0; 
+} 
+
+
+
+   
+      
+  

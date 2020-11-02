@@ -1,0 +1,83 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int array[100];
+int size,i ;
+int element;
+int pos;
+
+void create()
+{
+	printf("enter the size of the array>>");
+	scanf("%d",&size);
+	printf("\nenter the %d elements",size);
+	for(i=0 ; i<size ; i++)
+	scanf("%d",&array[i]);
+	printf("\nthe array is created sucessfully");
+}
+
+void display()
+{
+	printf("\nthe array elemets\n");
+	for(i=0 ; i<size ; i++)
+	printf("%d\n",array[i]);
+}
+
+void insert()
+{
+	printf("Enter the element to be inserted >> ");
+	scanf("%d",&element);
+	printf("enter the position >>");
+	scanf("%d",&pos);
+
+	if(pos>= 0 && pos<=size)
+	{
+	for(i=size-1 ; i>=pos ; i--)
+	{
+		array[i+1]=array[i];
+	}
+	array[pos]=element;
+	size++;
+	printf("Element is inserted sucessfully ");
+	}
+	else
+        printf("enter a valid position");
+}
+
+void del()
+{
+	printf("Enter the position of the element to be deleted ");
+	scanf("%d",&pos);
+	if(pos<=size)
+	{
+		element =  array[pos];
+		for(i=pos ; i<size ; i++)
+		array[i]=array[i+1];
+    	size--;
+    	printf("deleted element is %d",element);
+    }
+    else
+    {
+    	printf("invalid position");
+    }
+}
+
+int main(void)
+{
+	int ch ;
+	while(1)
+	{
+		printf("\nchoose the operation >>");
+		printf("\n1-create\n \n2-insert \n\n3-display\n\n4-delete\n\n5-exit\n");
+		scanf("%d",&ch);
+		switch(ch)
+		{
+			case 1 : create(); break ;
+			case 2 : insert(); break;
+			case 3 : display(); break;
+			case 4 : del(); break;
+			case 5 : exit(0);
+		}
+	}
+	return 0;
+}

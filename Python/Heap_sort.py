@@ -1,58 +1,32 @@
-"""
-This is a pure python implementation of the heap sort algorithm.
-
-For doctests run following command:
-python -m doctest -v heap_sort.py
-or
-python3 -m doctest -v heap_sort.py
-
-For manual testing run:
-python heap_sort.py
-"""
-
-
-def heapify(unsorted, index, heap_size):
-    largest = index
-    left_index = 2 * index + 1
-    right_index = 2 * index + 2
-    if left_index < heap_size and unsorted[left_index] > unsorted[largest]:
-        largest = left_index
-
-    if right_index < heap_size and unsorted[right_index] > unsorted[largest]:
-        largest = right_index
-
-    if largest != index:
-        unsorted[largest], unsorted[index] = unsorted[index], unsorted[largest]
-        heapify(unsorted, largest, heap_size)
-
-
-def heap_sort(unsorted):
-    """
-    Pure implementation of the heap sort algorithm in Python
-    :param collection: some mutable ordered collection with heterogeneous
-    comparable items inside
-    :return: the same collection ordered by ascending
-
-    Examples:
-    >>> heap_sort([0, 5, 3, 2, 2])
-    [0, 2, 2, 3, 5]
-
-    >>> heap_sort([])
-    []
-
-    >>> heap_sort([-2, -5, -45])
-    [-45, -5, -2]
-    """
-    n = len(unsorted)
-    for i in range(n // 2 - 1, -1, -1):
-        heapify(unsorted, i, n)
-    for i in range(n - 1, 0, -1):
-        unsorted[0], unsorted[i] = unsorted[i], unsorted[0]
-        heapify(unsorted, 0, i)
-    return unsorted
-
-
-if __name__ == "__main__":
-    user_input = input("Enter numbers separated by a comma:\n").strip()
-    unsorted = [int(item) for item in user_input.split(",")]
-    print(heap_sort(unsorted))
+def heapify(arr, n, i):
+   largest = i # largest value
+   l = 2 * i + 1 # left
+   r = 2 * i + 2 # right
+   # if left child exists
+   if l < n and arr[i] < arr[l]:
+      largest = l
+   # if right child exits
+   if r < n and arr[largest] < arr[r]:
+      largest = r
+   # root
+   if largest != i:
+      arr[i],arr[largest] = arr[largest],arr[i] # swap
+      # root.
+      heapify(arr, n, largest)
+# sort
+def heapSort(arr):
+   n = len(arr)
+   # maxheap
+   for i in range(n, -1, -1):
+      heapify(arr, n, i)
+   # element extraction
+   for i in range(n-1, 0, -1):
+      arr[i], arr[0] = arr[0], arr[i] # swap
+      heapify(arr, i, 0)
+# main
+arr = [2,5,3,8,6,5,4,7]
+heapSort(arr)
+n = len(arr)
+print ("Sorted array is")
+for i in range(n):
+   print (arr[i],end=" ")

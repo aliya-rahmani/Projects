@@ -8,7 +8,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent; 
 import java.awt.event.ActionListener; 
 
-public class stopwatch extends Applet implements Runnable, ActionListener { 
+public class GeeksforGeeks extends Applet implements Runnable, ActionListener { 
 	
 // Panel to keep all the buttons and labels 
 	Panel p; 

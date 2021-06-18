@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Address Book System</title>
+<style type="text/css">
+    html,body{
+    font-family: sans-serif;
+}
+body{
+    margin: 0px auto;
+    max-width: 1000px;
+}
+h1{
+    margin: 0;
+}
+th{
+    color: white;
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 60px;
+}
+td{
+    border: 1px solid rgb(190,190,190);
+    padding: 0px 5px;
+}
+thead{
+    background-color: #000099;
+    line-height: 20px;
+
+}
+footer,header{
+    background-color: #000099;
+    padding: 0 20px;
+    color: white;
+    line-height: 100px;
+}
+footer{
+    line-height: 60px;
+}
+footer p{
+    text-align: center;
+    font-size: 18px;
+}
+#new-contact, #contact-display {
+    padding: 20px;
+}
+#new-contact {
+    background: #ffcc66;
+}
+div {
+    margin-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+}
+label {
+display: inline-block;
+width: 90px;
+text-align: right;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Address Book</h1>
+    </header>
+    <main>
+        <section id="contact-display">
+            <h2 class="contacts">Contacts</h2>
+            <table class="table">
+                <tr id="head">
+                    <thead>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                        <th>Email Address</th>
+                        <th>Website</th>
+                        <th>Action</th>
+                    </thead>
+                </tr>
+                <tbody id="data">
+                    
+                </tbody>
+            </table>
+        </section>
+        <section id="new-contact">
+            <h2>Create a New Contact</h2>
+            <form class="form-group">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input id="fullname" type="text"  maxlength="15" required class="form-control">
+                </div>
+                <div>
+                    <label for="add">Address:</label>
+                    <input id="address" type="text" maxlength="30" required class="form-control">
+                </div>
+                <div>
+                    <label for="phone">Phone No:</label>
+                    <input id="phonenumber" type="number" maxlength="15" required class="form-control">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="emailaddress" type="email" maxlength="30" required class="form-control">
+                </div>
+                <div>
+                    <label for="url">Website:</label>
+                    <input id="url" type="url" maxlength="20" class="form-control">
+                </div>
+                <div>
+                    <button class="btn btn-success">Create contacts</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Developed by ITSOURCECODE.COM</p>
+    </footer>
+    <script>
+        const form = document.querySelector('form');
+const trHead = document.querySelector('#head');
+const conData = document.querySelector('#data');
+const fullnameInput = document.querySelector('#fullname');
+const addressInput = document.querySelector('#address');
+const phoneInput = document.querySelector('#phonenumber');
+const emailInput = document.querySelector('#emailaddress');
+const urlInput = document.querySelector('#url');
+const button = document.querySelector('button');
+
+let db
+
+window.onload = () => {
+    let request = window.indexedDB.open('contacts', 1)
+
+    request.onerror = () => {
+        console.log('Database failed to open')
+    }
+
+    request.onsuccess = () => {
+        console.log('Database opened successfully')
+        db = request.result;
+        displayData();
+    }
+    request.onupgradeneeded = (e) => {
+        let db = e.target.result;
+        let objectStore = db.createObjectStore('contacts', { keyPath: 'id', autoIncrement:true });
+    
+        objectStore.createIndex('fullname', 'fullname', { unique: false });
+        objectStore.createIndex('address', 'address', { unique: false });
+        objectStore.createIndex('phonenumber', 'phonenumber', { unique: false });
+        objectStore.createIndex('emailaddress', 'emailaddress', { unique: false });
+        objectStore.createIndex('url', 'url', { unique: false });
+    
+        console.log('Database setup complete');
+      };
+
+    form.onsubmit = (e) => {
+        e.preventDefault()
+        let newItem = { fullname: fullnameInput.value, address: addressInput.value, phonenumber: phoneInput.value, emailaddress: emailInput.value, url: urlInput.value };
+        let transaction = db.transaction(['contacts'], 'readwrite');
+        let objectStore = transaction.objectStore('contacts');
+        var request = objectStore.add(newItem)
+
+        request.onsuccess = () => {
+            fullnameInput.value = '';
+            addressInput.value = '';
+            phoneInput.value = '';
+            emailInput.value = '';
+            urlInput.value = '';
+        };
+
+        transaction.oncomplete = () => {
+            console.log('Transaction completed: database modification finished.');
+            displayData();
+        };
+
+        transaction.onerror = () => {
+            console.log('Transaction not opened due to error');
+        };
+    }
+
+    function displayData() {
+        while (conData.firstChild) {
+          conData.removeChild(conData.firstChild);
+        }
+
+        let objectStore = db.transaction('contacts').objectStore('contacts');
+
+        objectStore.openCursor().onsuccess = (e) => {
+          let cursor = e.target.result;
+
+          if(cursor) {
+            let tr = document.createElement('tr');
+            let tdFullName = document.createElement('td'); 
+            let tdAddress = document.createElement('td');
+            let tdPhoneNumber = document.createElement('td');
+            let tdEmailAddress = document.createElement('td');
+            let tdUrl = document.createElement('td');
+
+            tr.appendChild(tdFullName);
+            tr.appendChild(tdAddress);
+            tr.appendChild(tdPhoneNumber);
+            tr.appendChild(tdEmailAddress);
+            tr.appendChild(tdUrl);
+            conData.appendChild(tr);
+    
+            tdFullName.textContent = cursor.value.fullname
+            tdAddress.textContent = cursor.value.address
+            tdPhoneNumber.textContent = cursor.value.phonenumber
+            tdEmailAddress.textContent = cursor.value.emailaddress
+            tdUrl.textContent = cursor.value.url
+    
+            tr.setAttribute('data-contact-id', cursor.value.id);
+
+    
+            let deleteBtn = document.createElement('button');
+            tr.appendChild(deleteBtn);
+            deleteBtn.textContent = 'Delete';
+    
+            deleteBtn.onclick = deleteItem;
+
+            cursor.continue();
+          } 
+          else {
+            if(!conData.firstChild) {
+              let para = document.createElement('p');
+              para.textContent = 'No contact stored.'
+              conData.appendChild(para);
+            }
+            console.log('Notes all displayed');
+          }
+        };
+      }
+
+      function deleteItem(e) {
+        let contactId = Number(e.target.parentNode.getAttribute('data-contact-id'));
+        let transaction = db.transaction(['contacts'], 'readwrite');
+        let objectStore = transaction.objectStore('contacts');
+        let request = objectStore.delete(contactId);
+    
+        transaction.oncomplete = () => {
+          e.target.parentNode.parentNode.removeChild(e.target.parentNode);
+          console.log('Contact ' + contactId + ' deleted.');
+
+          if(!conData.firstChild) {
+            let para = document.createElement('p');
+            para.textContent = 'No notes stored.';
+            conData.appendChild(para);
+          }
+        };
+      }
+}
+    </script>
+</body>
+</html>

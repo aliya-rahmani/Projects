@@ -51,8 +51,3 @@
 
 ****
 
-# Below is link to video of how game is to be played :
-<p align="center">
-  <img src="Images/sample_video.gif" /><br>
-</p>
-

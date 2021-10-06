@@ -56,13 +56,6 @@
   <img width = 1000 src="Images/12.jpg" /><br>
 </p>
 
-****
-
-# Below is also a sample video of how this nre IDE works :
-<p align="center">
-  <img src="Images/sample_video.gif" /><br>
-</p>
-
 ***
 
 # Author :
